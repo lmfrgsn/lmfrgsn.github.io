@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300i');
-@green: #80f19d;
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
+@brand: #6aefe4;
 @white: #fff;
-@dark: #343434;
+@light-grey: #f7f7f7;
+@dark: #131313;
+@font-family-serif: 'Libre Baskerville',
+Georgia,
+Times,
+serif;
+@font-family-sans-serif: 'Noto Sans',
+Helvetica,
+sans-serif;
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,156 +19,139 @@
 
 body {
     background-color: #efefef;
-    color: @dark;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-}
-
-#main {
-    background-color: @white;
+    background: @brand;
+    padding: 0.5rem;
+    font-size: 14px;
 }
 
 .container {
     width: 100%;
-    max-width: 840px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &.top {
-        align-items: initial;
-    }
-}
-
-.col {
-    &.half {
-        width: 50%;
-    }
-    &.full {
-        width: 100%;
-    }
-    &.one-third {
-        width: 34%;
-    }
-    &.two-thirds {
-        width: 66%;
-    }
-}
-
-svg {
-    width: 30px;
-    margin: 2rem 0;
-    transition-duration: 0.8s;
-    transition-property: transform;
-    .st0 {
-        fill: #34363E;
-    }
-    &:hover {
-        transform: rotate(405deg);
-        .st0 {
-            fill: @green;
-        }
-    }
-}
-
-.dark {
-    background-color: #34363E;
-    color: @white;
-}
-
-.blurb {
-    // background-color: @green;
-    color: #34363E;
-    p {
-        font-size: 1.15rem;
-        line-height: 1.6rem;
-    }
-}
-
-.projects {
-    background-color: @green;
-    color: @dark;
-    a {
-        font-weight: 400;
-        &:hover {
-            text-decoration: none;
-        }
-    }
-}
-
-.img-full {
-    width: 100%;
-    display: block;
+h2,
+h3,
+h4,
+h5 {
+    font-family: @font-family-sans-serif;
 }
 
 h1 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 1em;
+    font-family: @font-family-serif;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height:1.5;
 }
 
 h2 {
-    font-size: 1.3rem;
-    font-weight: 300;
-    margin-bottom: 1em;
+    font-size: 0.85rem;
     text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 2px solid @brand;
+        &:hover {
+            background-color: @brand;
+            padding: 0 0.3rem;
+        }
+    }
+}
+
+h3 {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1rem;
 }
 
 p {
-    margin-bottom: 1rem;
-    &:last-of-type {
-        margin-bottom: 0;
+    font-family: @font-family-serif;
+    line-height: 1.5; // margin-bottom: 1rem;
+    font-size: 0.9rem;
+    // &:last-of-type {
+    //     margin-bottom: 0;
+    // }
+    &.lead {
+        font-size: 1rem;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        border-bottom: 1px dashed @brand;
+        &:hover {
+            border-bottom-style: solid;
+        }
     }
 }
 
 a {
-    color: @dark;
+    transition: 200ms ease-in-out;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.with-content {
-    padding: 2rem;
-}
-
-.btn {
-    color: @green;
-    text-decoration: none;
-    border: 3px solid @green;
-    margin: 0 auto;
-    border-radius: 6px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    transition: all 0.2s ease-in-out;
-    font-weight: 400;
-    display: inline-block;
-    &:hover {
-        background-color: @green;
-        color: @dark;
-        padding: 10px 30px;
+header {
+    background: url('../img/header-bg.jpg') no-repeat top right;
+    background-size: cover; // position: relative;
+    .l-icon {
+        width: 30px;
+        position: fixed;
+        margin-top: 2rem;
+        margin-left: -50px;
+    }
+    h1 {
+        color: @white;
+        padding: 10rem 0;
     }
 }
 
-footer {
-    text-align: center;
-    font-size: 0.8rem;
+main {
+    background-color: @white;
+}
+
+section {
+    padding: 3rem 0;
+    &.about-me {}
+    &.projects {
+        background-color: @light-grey;
+        article {
+            margin-bottom: 2rem;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.contact {
+        background-color: @dark;
+        color: @white;
+        a {
+            color: @brand;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 500px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 600px) {
-    .row {
-        flex-direction: column;
+    .container {
+        max-width: 500px;
     }
-    .col {
-        &.half,
-        &.one-third,
-        &.two-thirds {
-            width: 100%;
+    header {
+        .l-icon {
+            position: relative;
+            margin-left: 0;
+        }
+        h1 {
+            padding: 6rem 0 10rem;
         }
     }
 }

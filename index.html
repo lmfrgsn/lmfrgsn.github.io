@@ -2,10 +2,21 @@
 <html lang="en">
 
 <head>
-    <title>Liam Ferguson | Web Developer</title>
+    <title>Liam Ferguson | Web Developer & Designer based in Belfast, Northern Ireland</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#f7f7f7">
+    <meta property="og:url" content="http://www.lmfrgsn.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Liam Ferguson | Web Developer &amp; Designer based in Belfast, Northern Ireland" />
+    <meta property="og:description" content="I'm a web developer with a passion for design, details and functionality." />
+    <meta property="og:image" content="assets/img/facebook-og.jpg" />
 </head>
 
 <body>
@@ -13,77 +24,70 @@
     <header>
         <div class="container">
             <a href="http://lmfrgsn.com">
-                <svg id="lf-square" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" alt="LF logo">
-                    <path class="st0" d="M0 500h100v100H0zM0 400h100v100H0zM0 300h100v100H0zM100 500h100v100H100zM200 500h100v100H200zM500 0h100v100H500zM500 100h100v100H500zM500 200h100v100H500zM400 0h100v100H400zM300 0h100v100H300z"
-                    />
-                </svg>
+                <img class="l-icon" src="assets/img/l-icon-colour.SVG" alt="L icon">
             </a>
+            <h1>Hello. I’m Liam, a web developer and designer based in Northern Ireland.</h1>
         </div>
     </header>
 
-
-    <div class="container">
-        <div id="main">
-            <div class="row dark">
-                <div class="col two-thirds intro-text with-content">
-                    <h1>Hi! 👋</h1>
-                    <h1>I'm Liam, a web developer, currently looking for interesting opportunities.</h1>
-                </div>
-                <div class="col one-third">
-                    <figure>
-                        <img class="img-full me" src="assets/img/liam-ferguson.jpg" alt="Image of Liam Ferguson" title="Liam Ferguson" />
-                    </figure>
-                </div>
+    <main>
+        <section class="about-me">
+            <div class="container">
+                <h3>About Me</h3>
+                <p class="lead">I'm a web developer with a passion for design, details and functionality. I have been creating things online
+                    for over a decade and working in the industry for the past five years. I care about creating great user
+                    experiences that work on a wide range of platforms and for people of all abilities.</p>
             </div>
+        </section>
 
-            <div class="row">
-                <div class="col full blurb with-content">
-                    <p>Over the past few years I have helped companies create functional and usable websites for a wide range
-                        of audiences, and on a wide range of platforms. I have a keen interest in clean code, UX, and design
-                        thinking.
+        <section class="projects">
+            <div class="container">
+                <h3>Projects</h3>
+
+                <article>
+                    <h2><a href="#">Giants &amp; Gentlemen &rarr;</a></h2>
+                    <p>I developed the website for Toronto based advertising agency Giants & Gentlemen to portray their work,
+                        showcase their culture, and attract new talent to work with them. The site won a <a href="#">WMA Internet Advertising
+                        Competition Award for Outstanding Website</a>.</p>
+                </article>
+
+                <article>
+                    <h2><a href="#">Reds &rarr;</a></h2>
+                    <p>I worked with the creative team to bring their elegant design concept to life. The site gives users quick
+                        and easy access to menus, events and booking via OpenTable. The client can easily update everything
+                        in WordPress.
                     </p>
-                    <p>Typical day-to-day tools include: HTML, CSS, WordPress, jQuery, LESS, Gulp &amp; Git, all used in the
-                        amazing editor: Visual Studio Code.</p>
-                    <p>I have a background in PHP, MySQL and Laravel, but my true passion lies in the front-end, and what the
-                        user
-                        <i>uses</i>. It's for this reason I am currently learning (and loving) ES6 and React.</p>
-                </div>
+                </article>
+
+                <article>
+                    <h2><a href="#">The Cat Inn &rarr;</a></h2>
+                    <p>I designed and developed a site to bring a fresh look to South England based restaurant and bed &amp;
+                        breakfast The Cat Inn. It gives way to striking photography and conveniently places an easy way to
+                        book a table or room, or get in contact.</p>
+                </article>
             </div>
+        </section>
 
-            <div class="row dark">
-                <div class="col half projects with-content">
-                    <h2>Recent Projects</h2>
-                    <a href="http://giantsandgents.com/">Giants & Gentlemen</a>
-                    <p>Front-end developement, WordPress theme development.</p>
-
-                    <a href="http://redsmidtowntavern.com/">REDS Midtown Tavern</a>
-                    <p>Front-end developement, WordPress theme development.</p>
-
-                    <a href="http://linkubator.com/">Linkubator</a>
-                    <p>Design, front-end developement, custom CMS integration.</p>
-                </div>
-                <div class="col half text-center with-content">
-                    <a class="btn" href="mailto:hi@lmfrgsn.com">Get In Touch</a>
-                </div>
+        <section class="contact">
+            <div class="container">
+                <h3>Get in touch</h3>
+                <p>I'm interested in working with agencies, businesses and people. If you'd like to work together, feel free
+                    to email me at <a href="mailto:hi@lmfrgsn.com">hi@lmfrgsn.com</a> and I'll get back to you promptly.</p>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <footer>
-        <div class="container with-content">
-            <p>&copy; 2017, I guess. <a href="https://github.com/lmfrgsn/lmfrgsn.github.io">Click here</a> to view the source
-                of this site on GitHub.</p>
-        </div>
-    </footer>
+    </main>
 
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-88071815-1', 'auto');
-    ga('send', 'pageview');
+        ga('create', 'UA-88071815-1', 'auto');
+        ga('send', 'pageview');
     </script>
 
 </body>
