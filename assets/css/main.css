@@ -19,14 +19,16 @@ ul[role='list'],
 ol[role='list'] {
   list-style: none; }
 
-html:focus-within {
-  scroll-behavior: smooth; }
+html {
+  height: 100%; }
+  html:focus-within {
+    scroll-behavior: smooth; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   background-color: #fff;
-  color: #073B4C;
-  min-height: 100vh;
+  color: #073b4c;
+  height: 100%;
   text-rendering: optimizeSpeed;
   line-height: 1.5; }
 
@@ -41,7 +43,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   padding: 2rem; }
   main:before, main:after {
     position: fixed;
