@@ -25,7 +25,7 @@ html:focus-within {
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   background-color: #fff;
-  color: #272727;
+  color: #073B4C;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5; }
@@ -46,7 +46,7 @@ main {
   main:before, main:after {
     position: fixed;
     font-weight: bold;
-    font-size: 330px;
+    font-size: 20rem;
     color: #25dbaf;
     opacity: 0.08;
     line-height: 0.75;
@@ -54,7 +54,7 @@ main {
     letter-spacing: -1rem; }
     @media (max-width: 800px) {
       main:before, main:after {
-        font-size: 160px;
+        font-size: 10rem;
         letter-spacing: -0.5rem; } }
   main:before {
     content: 'I am';
