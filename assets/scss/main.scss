@@ -57,6 +57,7 @@ main {
 
   &:before,
   &:after {
+    display: none;
     position: fixed;
     font-weight: bold;
     font-size: 20rem;
@@ -103,6 +104,7 @@ h1 {
   margin-bottom: 1rem;
   font-size: 1.75rem;
   font-weight: 500;
+  animation: fadein 1s;
 }
 
 p {
@@ -119,6 +121,13 @@ strong {
   background: #25dbaf;
 }
 
+.floating-icon {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 50px;
+}
+
 @keyframes slide-from-left {
   100% {
     left: 0;
@@ -128,5 +137,14 @@ strong {
 @keyframes slide-from-right {
   100% {
     right: 0;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
