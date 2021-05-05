@@ -93,16 +93,25 @@ main {
       opacity: 1;
     }
   }
+
+  .about-me {
+    max-width: 570px;
+  }
 }
 
 h1 {
   margin-bottom: 1rem;
   font-size: 1.75rem;
+  font-weight: 500;
 }
 
 p {
   margin-bottom: 1rem;
   font-size: 1.2rem;
+}
+
+strong {
+  font-weight: 600;
 }
 
 ::selection {
