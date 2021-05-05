@@ -51,7 +51,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
   padding: 2rem;
 
@@ -97,6 +97,7 @@ main {
 
   .about-me {
     max-width: 570px;
+    animation: fadein 1.5s;
   }
 }
 
@@ -104,7 +105,6 @@ h1 {
   margin-bottom: 1rem;
   font-size: 1.75rem;
   font-weight: 500;
-  animation: fadein 1s;
 }
 
 p {
@@ -122,20 +122,15 @@ strong {
 }
 
 .floating-icon {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 50px;
-
-  @media (max-width: 800px) {
-    top: 2rem;
-    left: 2rem;
-  }
+  width: 40px;
+  margin-bottom: 1rem;
+  // animation: slide-from-left 0.3s forwards;
+  // margin-left: -100%;
 }
 
 @keyframes slide-from-left {
   100% {
-    left: 0;
+    margin-left: 0;
   }
 }
 

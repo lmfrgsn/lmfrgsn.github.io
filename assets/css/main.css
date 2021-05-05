@@ -42,7 +42,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
   padding: 2rem; }
   main:before, main:after {
@@ -74,13 +74,13 @@ main {
   main:hover:before, main:hover:after {
     opacity: 1; }
   main .about-me {
-    max-width: 570px; }
+    max-width: 570px;
+    animation: fadein 1.5s; }
 
 h1 {
   margin-bottom: 1rem;
   font-size: 1.75rem;
-  font-weight: 500;
-  animation: fadein 1s; }
+  font-weight: 500; }
 
 p {
   margin-bottom: 1rem;
@@ -94,18 +94,12 @@ strong {
   background: #25dbaf; }
 
 .floating-icon {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 50px; }
-  @media (max-width: 800px) {
-    .floating-icon {
-      top: 2rem;
-      left: 2rem; } }
+  width: 40px;
+  margin-bottom: 1rem; }
 
 @keyframes slide-from-left {
   100% {
-    left: 0; } }
+    margin-left: 0; } }
 
 @keyframes slide-from-right {
   100% {
