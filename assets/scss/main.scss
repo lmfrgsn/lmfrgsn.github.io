@@ -105,6 +105,10 @@ h1 {
   margin-bottom: 1rem;
   font-size: 1.75rem;
   font-weight: 500;
+
+  @media (max-width: 800px) {
+    font-size: 1.3rem;
+  }
 }
 
 p {
