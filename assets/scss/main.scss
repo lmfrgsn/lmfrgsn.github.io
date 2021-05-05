@@ -126,6 +126,11 @@ strong {
   top: 1rem;
   left: 1rem;
   width: 50px;
+
+  @media (max-width: 800px) {
+    top: 2rem;
+    left: 2rem;
+  }
 }
 
 @keyframes slide-from-left {
